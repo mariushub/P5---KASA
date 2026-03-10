@@ -13,14 +13,14 @@ export default function Carousel(props: { images: string[] }) {
     if (total === 1) {
         return (
             <div className="carousel">
-                <img src={images[0]} alt="" className="carousel__image" />
+                <img src={images[0]} alt="" className="carousel__image" loading="lazy" />
             </div>
         )
     }
 
     return (
         <div className="carousel">
-            <img src={images[current]} alt="" className="carousel__image" />
+            <img src={images[current]} alt="" className="carousel__image" loading="lazy" />
             {current > 0 && (
                 <button className="carousel__btn carousel__btn--prev" onClick={prev}>
                     <FontAwesomeIcon icon={faChevronLeft} />

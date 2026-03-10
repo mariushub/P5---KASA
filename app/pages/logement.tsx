@@ -31,7 +31,7 @@ export default function Logement() {
                     <Rating value={logement.rating} />
                     <div className="logement__host">
                         <span className="logement__host-name">{logement.host.name}</span>
-                        <img className="logement__host-picture" src={logement.host.picture} alt={logement.host.name} />
+                        <img className="logement__host-picture" src={logement.host.picture} alt={logement.host.name} loading="lazy" />
                     </div>
                 </div>
             </div>
