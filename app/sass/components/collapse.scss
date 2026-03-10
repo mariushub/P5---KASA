@@ -1,0 +1,73 @@
+@use "../variables" as *;
+
+.collapse {
+    width: 100%;
+
+    &__header {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__arrow {
+        font-size: 16px;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+
+        &--open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        background-color: $secondary;
+        z-index: 1;
+        border-radius: 0 0 5px 5px;
+        padding: 20px;
+        margin-top: -10px;
+        padding-top: 30px;
+
+        & p,
+        & li {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        & ul {
+            list-style: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__header {
+            font-size: 13px;
+            padding: 7px 15px;
+            border-radius: 5px;
+        }
+
+        &__arrow {
+            font-size: 12px;
+        }
+
+        &__content {
+            padding: 15px;
+
+            & p,
+            & li {
+                font-size: 12px;
+            }
+        }
+    }
+}

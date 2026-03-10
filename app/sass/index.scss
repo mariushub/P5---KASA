@@ -1,0 +1,18 @@
+@use "./reset.scss";
+@use "./global.scss";
+
+// Components
+@use "./components/header.scss";
+@use "./components/footer.scss";
+@use "./components/imageTitle.scss";
+@use "./components/logementCard.scss";
+@use "./components/tag.scss";
+@use "./components/collapse.scss";
+@use "./components/carousel.scss";
+@use "./components/rating.scss";
+
+// Pages
+@use "./pages/404.scss" as notfound;
+@use "./pages/home.scss" as home;
+@use "./pages/logement.scss" as logement;
+@use "./pages/about.scss" as about;

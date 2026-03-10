@@ -1,0 +1,22 @@
+@use "../variables" as *;
+
+.rating {
+    display: flex;
+    gap: 5px;
+
+    &__star {
+        font-size: 24px;
+        color: $secondary;
+        
+
+        &--active {
+            color: $primary;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__star {
+            font-size: 16px;
+        }
+    }
+}

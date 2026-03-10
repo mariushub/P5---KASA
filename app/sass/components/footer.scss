@@ -1,0 +1,40 @@
+.footer {
+    width: 100vw;
+    height: 209px;
+    min-height: 209px;
+    margin-top: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    & img {
+        height: 40px;
+        width: fit-content;
+        object-fit: cover;
+    }
+
+    & p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        width: 513px;
+        height: 46px;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+  .footer {
+
+    & p {
+        font-size: 16px;
+    }
+  }
+}

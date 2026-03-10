@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    background-color: $primary;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    min-width: 115px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+        padding: 3px 15px;
+        min-width: 84px;
+        border-radius: 5px;
+    }
+}
