@@ -4,7 +4,7 @@ export default function About() {
     return (
         <main className="about">
             <div className="about__banner">
-                <img src="/aPropos.png" alt="Paysage de montagne" />
+                <img src="/aPropos.webp" alt="Paysage de montagne" />
             </div>
             <div className="about__collapses">
                 <Collapse title="Fiabilité">
